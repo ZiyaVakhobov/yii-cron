@@ -1,0 +1,13 @@
+{
+  "name": "ziya/yii-cron",
+  "description": "Yii cron package",
+  "type": "package",
+  "require": {
+    "php": ">=5.6",
+  },
+  "autoload": {
+    "psr-4": {
+      "Ziya\\YiiCron\\": "src"
+    }
+  }
+}
