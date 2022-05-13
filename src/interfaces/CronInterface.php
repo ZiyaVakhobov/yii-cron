@@ -18,4 +18,8 @@ interface CronInterface
      * @return void
      */
     public function execute();
+
+    public function getLogs();
+    
+    public function addLog($message);
 }
