@@ -13,6 +13,7 @@ namespace Ziya\YiiCron\models;
  * @property string|null $hour
  * @property string|null $minutes
  * @property int|null $is_regular
+ * @property int|null $is_active
  */
 class CronRunTime extends \yii\db\ActiveRecord
 {
@@ -31,7 +32,7 @@ class CronRunTime extends \yii\db\ActiveRecord
     {
         return [
             [['year', 'month', 'day', 'hour', 'minutes'], 'safe'],
-            [['is_regular'], 'integer'],
+            [['is_regular', 'is_active'], 'integer'],
             [['key'], 'string', 'max' => 255],
         ];
     }

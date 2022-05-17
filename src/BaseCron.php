@@ -37,7 +37,7 @@ abstract class BaseCron extends BaseObject implements CronInterface
     private function isValidTimeModel(CronRunTime $runTime)
     {
         $time = new \DateTime();
-        return $this->isValidTime($time->format('Y'),$runTime->year) &&
+        return $runTime->is_active && $this->isValidTime($time->format('Y'),$runTime->year) &&
             $this->isValidTime($time->format('m'),$runTime->month) &&
             $this->isValidTime($time->format('d'),$runTime->day) &&
             $this->isValidTime($time->format('H'),$runTime->hour) &&

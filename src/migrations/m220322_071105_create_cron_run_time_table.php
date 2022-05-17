@@ -20,7 +20,8 @@ class m220322_071105_create_cron_run_time_table extends Migration
             'day' => $this->json(),
             'hour' => $this->json(),
             'minutes' => $this->json(),
-            'is_regular'=> $this->boolean()
+            'is_regular'=> $this->boolean(),
+            'is_active'=> $this->boolean()
         ]);
     }
 
